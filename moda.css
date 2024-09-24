@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:antiquewhite;
+}
+.preguiça img {
+    position: relative; /* Para que o z-index funcione */
+    z-index: 2; /* Acima da overlay */
+}
+
+.Menu {
+    padding: 8px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    background-color: rgb(98, 54, 1);
+}
+
+.yellow {
+    background-color: rgba(82, 45, 0, 0.907);
+}
+
+.yellow img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 10px 50px 10px 50px;
+    transition: transform 1s;
+    cursor: pointer;
+    display: flex;
+    padding: 9px;
+    margin: 0 auto; 
+   
+}
+
+.yellow img:hover {
+    transform: scale(1.1);
+}
+
+.Menu ul {
+    display: flex; /* Aplica flex apenas ao ul */
+    padding: 0;
+}
+
+.Menu li {
+    list-style: none;
+}
+
+.Menu a {
+    padding: 9px 15px;
+    text-decoration: none;
+    position: center;
+    font-family: "Prompt", sans-serif;
+   
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+.Menu a:hover{
+     background: rgb(0, 0, 0);
+     padding: 6px;
+     margin: 30px;
+     border-radius: 10px;
+     
+    
+}
+.cards-row {
+    display: flex; /* Faz os cards aparecerem em linha */
+    margin: 10px;
+    margin-left: -9px;
+   
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    
+}
+
+
+.flip-card {
+    width: 300px;
+    height: 450px;
+    perspective: 1000px;
+    margin-top: -300px; 
+    border: solid 2px  rgba(98, 55, 1, 0.907);
+    border-radius: 27px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   backface-visibility: hidden; /* Esconde o lado "traseiro" */
+}
+
+.flip-card-back {
+    transform: rotateY(180deg); /* Vira o verso */
+}
+
+.flip-card-image {
+    width: 100%;
+    height: 100%;
+   
+    border-radius: 28px;
+}
+
+.p{
+    
+cursor: pointer;
+    background-color: rgba(98, 55, 1, 0.907);
+    border-radius: 20px;
+   
+    width: 90vh;
+    margin-top: 30px;
+    margin-left: 30%;
+    transition: 0.9s;
+}
+h1{
+   
+    color: rgb(255, 255, 255); 
+   font-size: 27px;
+  
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-family: "opacity", sans-serif; 
+    
+}
+
+.p:hover{
+    
+    transform: scale(1.1);
+    padding: 40px;
+    background:rgba(62, 34, 0, 0.907);
+    color: rgb(33, 33, 33);
+}
+.preguiça img{
+    height: 90px;
+    width: 90px;
+    position: fixed;
+    transition: 6s;
+    
+}
+.preguiça img:hover{
+    transform: scale(1.2);
+    
+}
+.quem{
+    
+    
+           display: flex;
+            
+            width: 100vh;
+            margin-top: 30px;
+            margin-left: 10%;
+            
+        
+}
+.text p{
+    font-size: 20px;
+    width: 100vh;
+    margin-left: 5% ;
+}
+
+.quem img{
+    height: 50%;
+    width: 50vh;
+    border-radius: 20px 50px 20px 50px;
+    box-shadow: 20px 20px 20px black;
+}
+.outra{
+    
+    
+    display: flex;
+     
+     width: 100vh;
+     margin-top: 220px;
+     margin-left: 40%;
+     
+ 
+}
+.outra p{
+font-size: 20px;
+width: 100vh;
+margin-left: -90% ;
+}
+
+.outra img{
+height: 50%;
+width: 50vh;
+border-radius: 20px 50px 20px 50px;
+box-shadow: 20px 20px 20px black;
+margin-left: 90px;
+}
+.block h1{
+    color: black;
+    transition: 0.5s;
+}
+.block h1:hover{
+    transform:scale(1.1) ;
+    
+}
